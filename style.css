@@ -15,9 +15,9 @@ button {
 }
 
 .container {
-    display: -moz-box;
     display: flex;
     flex-wrap: wrap;
+    display: -moz-box;
     margin: auto;
     width: 650px;
     height: 650px;
