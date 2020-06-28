@@ -15,6 +15,7 @@ button {
 }
 
 .container {
+    display: -moz-box;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -25,9 +26,4 @@ button {
 
 .grid {
     border: 1px solid rgb(206, 202, 202);
-}
-
-body {
-  display: flex;
-  flex-wrap: wrap;
 }
