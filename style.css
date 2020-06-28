@@ -21,9 +21,8 @@ button {
     width: 650px;
     height: 650px;
     border: 2px solid black;
-    justify-content: center;
 }
 
 .grid {
-    border: 1px solid gray;
+    border: 1px solid rgb(206, 202, 202);
 }
