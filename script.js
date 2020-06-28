@@ -16,8 +16,8 @@ function createGrid() {
     for (let i = 0; i < (gridSize**2); i++) {
             grid = document.createElement('div');
             grid.classList.add('grid');
-            grid.style.height = (650 / gridSize - 2) + 'px';
-            grid.style.width = (650 / gridSize - 2) + 'px';  
+            grid.style.height = (650 / gridSize) + 'px';
+            grid.style.width = (650 / gridSize) + 'px';  
             container.appendChild(grid);
             cellSelection();
     };
@@ -57,14 +57,14 @@ function cellSelection() {
 refreshButton.addEventListener('click', refresh);
 
 function refresh() {
-    gridSize = prompt('How many cells per side you want? (Max. 100)');
+    gridSize = prompt('How many cells per side you want? (Max. 64)');
     while ((0 + gridSize != Number(gridSize)) || 
-    (gridSize > 100)) {
+    (gridSize > 64)) {
         while (0 + gridSize != Number(gridSize)) {
-            gridSize = prompt('Enter a number, please. (Max. 100)');
+            gridSize = prompt('Enter a number, please. (Max. 64)');
         };
-        while (gridSize > 100) {
-            gridSize = prompt('Choose another number. Max. 100.');
+        while (gridSize > 64) {
+            gridSize = prompt('Choose another number. Max. 64.');
         };
     };
     if (gridSize < 1) {
