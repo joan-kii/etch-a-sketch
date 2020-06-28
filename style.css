@@ -17,7 +17,6 @@ button {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: auto;
     margin: auto;
     width: 650px;
     height: 650px;
@@ -26,4 +25,9 @@ button {
 
 .grid {
     border: 1px solid rgb(206, 202, 202);
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
 }
