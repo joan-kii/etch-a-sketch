@@ -13,15 +13,13 @@ function createGrid() {
         console.log(divs);
         divs.forEach(div => div.remove());
             };
-    for (let i = 0; i < gridSize; i++) {
-        for (let x = 0; x < gridSize; x++) {
+    for (let i = 0; i < (gridSize**2); i++) {
             grid = document.createElement('div');
             grid.classList.add('grid');
             grid.style.height = (650 / gridSize - 2) + 'px';
             grid.style.width = (650 / gridSize - 2) + 'px';  
             container.appendChild(grid);
             cellSelection();
-        };
     };
 };
 
